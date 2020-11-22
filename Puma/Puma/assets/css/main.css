@@ -1,0 +1,281 @@
+header {
+    width: 394px;
+    height: 360px;
+    background: rgba(0, 0, 0, .5);
+    padding: 16px 27px 0;
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+
+
+
+
+h1 {
+    font-size: 44px;
+    color: white;
+    margin-top: 2%;
+}
+
+
+nav {
+    width: 337px;
+    height: 34px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    float: left;
+    width: 67px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+}
+
+input[type="search"] {
+    width: 337px;
+    height: 30px;
+    padding-left: 10px;
+    color: white;
+    background: gray;
+    transition: 1s;
+}
+
+input:hover[type="search"] {
+    background: beige;
+} 
+
+
+main {
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    background: white;
+    margin-top:  525px;
+    float: left;
+}
+
+aside {
+    width: 20%; 
+    height: 400px;
+    /* background: red; */
+    background: url(../images/aside-fixed.jpg) 50px 0 no-repeat ; 
+    right: 0;
+    top: 525px;
+    position: fixed;
+    z-index: 2;
+}
+
+
+/* nav orange */
+
+a.orange {
+    width: 1000px;
+    height: 30px;
+    background: orange;
+    color: white;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 448px;
+    left: -508px;
+    transition: left 1s;
+}
+
+a.orange:hover {
+    left: -480px;
+}
+
+/* syntaxe after before */
+::placeholder {
+    color:red;
+}
+
+section:first-child, section:last-child {
+    width: 782px;
+    height: auto;
+    margin: auto;
+    min-height: 408px;
+}
+
+main section:first-child article:first-child header {
+    height: 39px;
+    width: 354px;
+    position: inherit;  
+    padding: 10px;
+    background: white;
+    text-align: center; 
+}
+
+section:first-child article:last-child footer {
+    width: 411px;
+    height: 65px;
+    /* background: black; */
+}
+
+
+section:first-child article:last-child {
+    width: 411px;
+    height: auto;
+    min-height: 405px;
+    float: left;
+}
+
+
+section:first-child article:first-child {
+    width: 354px;
+    float: left;
+}
+
+
+
+
+section:first-child article:last-child p {
+    padding: 10px;
+}
+
+
+section:first-child article:last-child footer div.rs {
+    width: 53px;
+    height: 65px;
+    float: right;
+    /* background: green; */
+}
+
+section:first-child article:last-child footer div.rs a img {
+    float:left;
+    display: block;
+    width: 26px;
+    height: 28px;
+}
+
+section:first-child article:last-child footer div.rs a  {
+    text-decoration: none;
+    font-size: 9px;
+    color: grey;
+}
+
+
+main section:first-child article:last-child header {
+    height: 39px;
+    width: 411px;
+    position: inherit;  
+    padding: 10px;
+    background: white;
+    text-align: center; 
+}
+
+main section:last-child article:first-child {
+    width: 515px;
+    height: auto;
+    min-height: 400px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    background: red;
+}
+
+main section:last-child article:last-child {
+    width: 249px;
+    height: auto;
+    min-height: 400px;
+    float: left;
+    /* background: green; */
+}
+
+main section:last-child  article:first-child figure:first-child {
+    position: absolute;
+    animation: 2s juicy 1s linear forwards;
+    /* infinite roule dans l'animation
+    forwards
+    backwards
+    */
+
+}
+
+
+
+main section:last-child  article:first-child figure:nth-child(2) {
+    position: absolute;
+    top: 26px;
+    left: 212px;
+    z-index: 3;
+    animation: droite 3s linear forwards;
+}
+
+main section:last-child  article:first-child figure:last-child {
+    position: absolute;
+    top: 26px;
+    left: -212px;
+    animation:  gauche 2s linear forwards;
+}
+ 
+
+ @keyframes juicy {
+    
+    0%{top: -400px;
+       left: 16px;}
+    100%{top: 72px;
+        left: 16px;}
+}
+
+
+@keyframes droite {
+    
+    0%{top: 26px;
+       left: -400px;
+       opacity: 0;}
+
+    100%{top: 26px;
+        left: 212px;
+        opacity:1;
+        transform: rotate(0deg)}
+}
+
+
+@keyframes gauche {
+    
+    0%{top: 82px;
+       left: 330px;
+       opacity: 0;}
+
+    100%{top: 82px;
+        left: 255px;
+        opacity:1;
+        transform: rotate(0deg)}
+}
+
+
+h3  {
+    text-align: center;
+    margin-bottom: 35px;
+}
+ 
+
+
+
+/* a[href="femme.html"]{
+    color: blue;
+} */
+
+
+
+/* fusion 2 fiches css @importurl(video.css) */
+
+
+
+/**/
+

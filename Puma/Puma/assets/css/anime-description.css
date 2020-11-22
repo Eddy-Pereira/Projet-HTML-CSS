@@ -1,0 +1,36 @@
+/* Animation début */
+
+
+main section:first-child article:first-child figure {
+    width: 354px;
+    height: 251px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+main section:first-child article:first-child figure figcaption {
+    position: absolute;
+    top: 0px;
+    left: 354px;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    text-align: center; 
+    height: 251px;
+    width: 100%;
+    padding: 20px;
+    transition-property:  left;
+    transition-duration: 1s;
+    /* transition-delay: 1s;  */
+}
+
+/* Transition-duration : durée de l'animation
+transition-delay : temps de l'animation*/
+
+
+main section:first-child article:first-child figure:hover figcaption {
+    left: 0px;
+}
+
+
+/* fin */
